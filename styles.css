@@ -1,0 +1,241 @@
+
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap);
+
+*{
+    font-family: 'Montserrat';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+}
+
+/* Tête de page */
+
+header.header {
+    display: flex;
+    align-items: center;
+}
+
+.top-page {
+    background: url('../images/truck\ mercedes.webp');
+    background-size: cover;
+    max-height: 100em;
+    padding-top: 5px;
+}
+
+/* Page de bienvenue (landing page) */
+
+.landing-page {
+    position: relative;
+    padding: 50px;
+}
+
+.big-title {
+    color: black;
+    font-size:  50px;
+    font-family: 'Abril FatFace', cursive;
+    font-weight: 50px;
+    width: 20%;
+}
+
+/* Menu de navigation */
+
+nav.nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none; 
+    width: 50%; 
+    margin-left: 50px;
+}
+
+nav.nav li a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Effet stylistique surlignage */
+
+.container {
+    background-color: transparent;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    min-height: 10vh;
+  }
+  .container h1 {
+    font-family: 'Montserrat', serif;
+    line-height: 1.4;
+    word-spacing: 3px;
+    max-width: 45rem;
+    text-shadow: 0px 0px 1px white;
+  }
+  .container .highlight {
+    display: inline-block;
+    color: #343434;
+    -webkit-transition: color 250ms, text-shadow 250ms;
+    transition: color 250ms, text-shadow 250ms;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px white;
+    position: relative;
+    z-index: 0;
+  }
+  .container .highlight::after {
+    position: absolute;
+    z-index: -1;
+    bottom: -5px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #eb2727;
+    -webkit-transition: all 250ms;
+    transition: all 250ms;
+  }
+  .container .highlight:hover {
+    color: white;
+    text-shadow: 0px 1px 0px black;
+  }
+  .container .highlight:hover::after {
+    height: 105%;
+    width: 105%;
+  }
+
+
+/* Services */
+
+.services {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.delivery-icon {
+    font-size: 50px;
+    color: #eb2727;
+}
+
+.service-details {
+    font-weight: 600;
+    width: 200px;
+    text-align: center;
+}
+
+/* best items */
+
+.section-title {
+    font-size: 50px;
+    font-family: 'Abril FatFace', cursive;
+    font-weight: 100;
+    position: relative;
+    margin: 100px;
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    background-color: #eb2727;
+    width: 50px;
+    height: 7px;
+    bottom: 0;
+}
+
+.listing{
+    margin: 100px;
+    list-style: none;
+}
+
+.pic-box {
+    position: relative;
+    background-position: center;
+}
+
+.folio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.pic1 {
+    background-image: url(../images/chronopost.PNG);
+}
+
+.pic2 {
+    background-image: url(../images/fleetwatcher.PNG);
+}
+
+.pic3 {
+    background-image: url(../images/fleetwatcher2.PNG);
+}
+
+.pic4 {
+    background-image: url(../images/soustraitance2.png);
+}
+.pic5{
+    background-image: url(../images/flexatrans.png);
+}
+
+.plant-details {
+    position: absolute;
+    bottom: 0;
+    background-color: #FFFFFFDF;
+    padding: 5px 20px;
+}
+
+.plant-name {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 3px;
+}
+
+.plant-price {
+    color: #ADD981;
+    line-height: 3px;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+/* nos plantes */
+
+.plant-grid {
+    display: grid;
+    min-height: 150;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 400px);
+}
+
+/* pied de page */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 100px;
+    font-weight: 600;
+}
+
+footer a.cgv {
+    text-decoration: none;
+    color: black;
+}
+
+.scroll-up {
+    color: black;
+    text-decoration: none;
+}
+
